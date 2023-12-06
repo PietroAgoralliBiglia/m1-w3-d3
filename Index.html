@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Style css/Style.css" />
+    <title>Task Manager</title>
+  </head>
+  <body>
+    <form id="main-form">
+      <div>
+        <label for="firstName">Il tuo nome</label>
+        <input
+          id="firstName"
+          placeholder="Mario Rossi"
+          maxlength="20"
+          required
+        />
+      </div>
+      <div id="app">
+        <h1>Task Manager</h1>
+        <div>
+          <input type="text" id="taskInput" placeholder="Enter a new task" />
+          <button onclick="addTask()">Add Task</button>
+        </div>
+        <ul id="taskList"></ul>
+      </div>
+      <div>
+        <label for="age">La tua età</label>
+        <input id="age" type="number" placeholder="19" min="18" max="120" />
+      </div>
+      <div>
+        <label for="city">La tua città</label>
+        <input id="city" placeholder="Caltanissetta" />
+      </div>
+      <div>
+        <label for="bio">Descriviti</label>
+        <textarea
+          id="bio"
+          placeholder="Mi piacciono i gatti"
+          rows="10"
+          cols="50"
+        ></textarea>
+      </div>
+      <button>INVIA</button>
+      <button type="reset">RESETTA</button>
+    </form>
+    <script src="./Forms js/Forms.js"></script>
+  </body>
+</html>
